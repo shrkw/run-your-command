@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bootstrap 101 Template</title>
+    <title>Run your command</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="static/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="static/css/navbar.css" rel="stylesheet">
+    <link href="static/css/index.css" rel="stylesheet">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="static/vendor/jquery/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -54,35 +54,39 @@
               </ul>
             </li>
           </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="./">Default</a></li>
-            <li><a href="../navbar-static-top/">Static top</a></li>
-            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
-          </ul>
         </div><!--/.nav-collapse -->
       </div>
 
       <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
+      <div class="">
         <h1>Rip your DVD</h1>
       </div>
 
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-6">
-          <h2>手順1</h2>
-          <p>DVDを入れてから5秒くらいしてから、下のボタンを押してください。</p>
-          <div class="input-group">
-            <span class="input-group-addon">DVD</span>
-            <input type="text" class="form-control" placeholder="DVD名">
+        <div class="col-md-12">
+          <h2>Procedure</h2>
+          <p>下の欄にDVDの名前を入れて、DVDを入れてから5秒くらいしてから、下のボタンを押してください。</p>
+          <div class="alert alert-danger input-warning">
+            <p>DVD名を入力してください。</p>
           </div>
-          <p><button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-send"></span> Start</button></p>
+          <div class="input-group">
+            <span class="input-group-addon">DVD名</span>
+            <input id="dvd_name" type="text" class="form-control" placeholder="CentOS_x64_DISC_1">
+          </div>
+          <p><button id="start" type="button" class="btn btn-lg btn-primary start"><span class="glyphicon glyphicon-send"></span> Start</button></p>
+          <div class="alert alert-info" id="ripping-now">
+            <p>リッピングが正常に完了すると、ディスクトレイが自動で開きます。だいたい15分程度お待ちください。</p>
+          </div>
         </div>
-        <div class="col-md-6">
-          <h2>手順2</h2>
-          <p>ed odio dui. </p>
-          <p><button type="button" class="btn btn-lg btn-success">Primary</button></p>
-       </div>
+        <div class="col-md-12">
+          <h2>Stdout or Return code</h2>
+          <pre id="stdout" />
+        </div>
+        <div class="col-md-12">
+          <h2>Stderr</h2>
+          <pre id="stderr" />
+        </div>
       </div>
     </div> <!-- /container -->
 

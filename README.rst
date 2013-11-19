@@ -10,19 +10,26 @@ Install
 Setup your environment
 --------------------------
 
-#. Install Python (if you want)
-#. Install setuptools (if you don't have)
-#. Install virtualenv
-#. Create virtual environment
+Install Python (if you want)
 
-::
+Install setuptools (if you don't have)
+
+Install virtualenv::
+
+  pip install virtualenv
+
+Create virtual environment::
 
   virtualenv -p ~/.pythonz/pythons/CPython-2.7.5/bin/python .pythonz/virtualenv/cpython275-ryc
 
-#. Install nodebrew
-#. Intall bower
+Install nodebrew and Node.js::
 
-::
+  curl -L git.io/nodebrew | perl - setup
+  export PATH=$HOME/.nodebrew/current/bin:$PATH
+  nodebrew install stable
+  nodebrew use stable
+
+Intall bower::
 
   npm install -g bower
 
@@ -37,6 +44,8 @@ Resolve project dependencies
 
 Run
 ================
+
+::
 
   python main.py
 

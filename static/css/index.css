@@ -6,3 +6,11 @@ body {
 .navbar {
   margin-bottom: 20px;
 }
+
+div#ripping-now, div.input-warning {
+  display: none;
+}
+
+button.start {
+  margin-top: 10px;
+}

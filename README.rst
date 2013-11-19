@@ -4,7 +4,8 @@ run-your-command
 
 This is simple one page web application for calling any commands from your browser.
 
-.. image:: https://www.dropbox.com/s/omx6sjha1e9vaga/image.png
+.. image:: https://r4jsig.blu.livefilestore.com/y2mLlEDXtbb65QNrX9JHZoNDIM2qiUCdTRNUttdDd-sjKf0nYceLyiA2UiTzrBycmK1iLQZjOMC8ObWcjmEehMCTASThI9e4Ln9zKh8NKIooBlo-mdKFqZ668V00hNRbz4F/image.png?psid=1
+   :alt: screen image
 
 Install
 ================

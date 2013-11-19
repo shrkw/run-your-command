@@ -1,18 +1,21 @@
 $(function() {
   $("#start").click(function() {
-    $("div.input-warning").hide(0);
-    $("pre#stdout").text("");
-    $("pre#stderr").text("");
-    var name = $("input#dvd_name").val();
+    var name = $("input#name").val();
     if (name == "") {
       $("div.input-warning").fadeIn();
       return;
     }
-    $("#ripping-now").fadeIn("slow");
+    $("div.input-warning").hide();
+    $("div.alert-success").hide();
+    $("pre#stdout").text("");
+    $("pre#stderr").text("");
+    $("#running-now").fadeIn("slow");
     $.post("/run?name=" + name, function(data) {
-        $("#ripping-now").hide();
-        $("pre#stdout").text(data.Result.out);
-        $("pre#stderr").text(data.Result.err);
+      $("#running-now").hide();
+      $("div.alert-success").fadeIn("slow");
+
+      $("pre#stdout").text(data.Result.out);
+      $("pre#stderr").text(data.Result.err);
     });
   });
 });

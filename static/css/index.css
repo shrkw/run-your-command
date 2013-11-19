@@ -7,7 +7,7 @@ body {
   margin-bottom: 20px;
 }
 
-div#ripping-now, div.input-warning {
+div#running-now, div.input-warning, div.alert-success {
   display: none;
 }
 

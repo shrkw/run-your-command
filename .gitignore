@@ -1,3 +1,8 @@
+
+
+static/vendor
+
+################################
 *.py[cod]
 
 # C extensions

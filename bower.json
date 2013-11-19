@@ -1,0 +1,19 @@
+{
+  "name": "RipyourDVD",
+  "version": "0.0.0",
+  "authors": [
+    "Hiroyuki Shirakawa"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.0.2",
+    "jquery": "~2.0.3"
+  }
+}

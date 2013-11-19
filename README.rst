@@ -2,6 +2,11 @@
 run-your-command
 ================
 
+**Important notice**
+
+*This application expects to work for internal network and faithful guys only.*
+*You must not provide this for internet and unnkown guys. If you don't accept this alert, your server may make trouble to not only your server but also other network.*
+
 This is simple one page web application for calling any commands from your browser.
 
 .. image:: https://r4jsig.blu.livefilestore.com/y2mLlEDXtbb65QNrX9JHZoNDIM2qiUCdTRNUttdDd-sjKf0nYceLyiA2UiTzrBycmK1iLQZjOMC8ObWcjmEehMCTASThI9e4Ln9zKh8NKIooBlo-mdKFqZ668V00hNRbz4F/image.png?psid=1
